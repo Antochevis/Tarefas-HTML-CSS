@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div>
+                <a href="/home.html"><img class="logo" width="50" src="/img/heisenberg.png" alt="logo"></a>
+                <small>Melhores alunos do Vemser de todos os tempos</small>
+            </div>
+            <nav>
+                <ul>
+                    <li class="navbar-header"><a  class="navbar-font" href="/home.html">Home</a></li>
+                    <li class="navbar-header"><a  class="navbar-font" href="/about.html">Sobre</a></li>
+                    <li class="navbar-header"><a  class="navbar-font" href="/contact.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="form-content">
+            <h1 class="form-title">Contato</h1>
+            <form class="form">
+                <label for="name">Digite seu nome completo:</label>
+                <input class="input" name="name" placeholder="nome completo" type="text" required>
+                <br><br>
+                <label for="email">Digite seu e-mail:</label>
+                <input class="input" name="email" placeholder="e-mail" type="email" required>
+                <br><br>
+                <label for="reasons">Qual o motivo do contato</label>
+                <select name="reasons" id="reasons">
+                    <option value="r1">Problema no site</option>
+                    <option value="r2">HTML é easy demais</option>
+                </select>
+                <br><br>
+                <label for="message">Sua Mensagem</label>
+                <textarea name="bio" placeholder="Digite sua Mensagem" id="bio" cols="30" rows="10" required></textarea>
+                <br><br>
+                <input class="button" type="submit" value="salvar">
+            </form>
+        </div>
+        <footer class="footer">
+            <nav>
+                <ul class="navbar-footer">
+                    <li class="navbar-footer-iten"><a class="navbar-font" href="/home.html">Home</a></li>
+                    <li class="navbar-footer-iten"><a class="navbar-font" href="/about.html">Sobre</a></li>
+                    <li class="navbar-footer-iten"><a class="navbar-font" href="/contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <address class="address">AV. Andaraí 531 - Porto Alegre</address>
+        </footer>  
+    </body>
+</html>

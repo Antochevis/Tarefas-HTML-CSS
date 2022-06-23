@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*cabecalho*/
+.header, .footer {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 20px 80px;
+}
+
+.logo {
+    width: 60px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.navbar-header {
+    display: inline;
+    padding-right: 20px;
+}
+
+.navbar-font {
+    color: white;
+}
+
+/*home*/
+.main-title {
+    color: rgb(112, 112, 112);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.main-heisenberg {
+    padding-bottom: 40px;
+}
+
+.heisenberg {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(226, 226, 226);
+    width: 100px;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.heisenberg p {
+    color: rgb(112, 112, 112);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.main-text {
+    background-color: rgb(112, 112, 112);
+    color: white;
+    padding: 40px 80px;
+    text-align: justify;
+}
+
+.map {
+    text-align: center;
+    color: rgb(112, 112, 112);
+}
+
+.map-title {
+    padding-top: 40px;
+}
+
+.map-content {
+    padding: 20px 0;
+}
+
+
+/*rodape*/
+.navbar-footer {
+    padding: 5px 0;
+}
+
+.navbar-footer-iten {
+    padding-top: 10px;
+    /*list-style-type: none;*/
+}
+
+.address {
+    padding-top: 20px;
+}
+
+
+/*about*/
+.about {
+    padding: 40px 80px;
+    color: rgb(112, 112, 112);
+}
+
+.video {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.video-title {
+    padding-bottom: 40px;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+
+/*contact*/
+.form-content {
+    padding: 40px 80px;
+}
+
+.form-title {
+    padding-bottom: 40px;
+    color: rgb(112, 112, 112);
+    text-align: center;
+}
+
+.form {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    padding: 40px 40px;
+    color: rgb(112, 112, 112);
+}
+
+.form label {
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+.input {
+    width: 300px;
+    padding: 5px;
+}
+
+.form select {
+    width: 315px;
+    padding: 5px;
+}
+
+.form textarea {
+    width: 303px;
+    padding: 5px;
+}
+
+.button {
+    width: 75px;
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px 0;
+}
