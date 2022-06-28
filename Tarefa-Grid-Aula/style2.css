@@ -42,35 +42,23 @@ header {
 }
 
 /*main*/
-.grid1 .imgs img {
+.grid1, .grid2 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.grid1 .imgs img, .propaganda img {
     width: 340px;
-    padding-bottom: 15px;
-}
-
-.grid1 {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;
-}
-
-.grid2 {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .propaganda {
     text-align: center;
 }
 
-.propaganda img {
-    width: 340px;
-    margin-bottom: 10px;
-}
-
-.images1, .images2 {
+.images {
     width: 340px;
 }
 

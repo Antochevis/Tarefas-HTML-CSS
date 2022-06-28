@@ -57,7 +57,13 @@ header {
     background-color: rgb(47, 128, 0);
 }
 
-.subtitle-main, .subtitle2, .subtitle1 {
+.secondary-img img {
+    width: 500px;
+    height: 380px;
+    background-color: rgb(47, 128, 0);
+}
+
+.subtitle {
     margin-top: -43px;
     width: 500px;
     background-color: black;
@@ -65,17 +71,8 @@ header {
     opacity: 90%;
 }
 
-.subtitle-main p, .subtitle1 p, .subtitle2 p {
+.subtitle p {
     margin-left: 20px;
     padding: 10px 0;
-}
-
-.secondary-img1 img, .secondary-img2 img {
-    width: 500px;
-    height: 380px;
-    background-color: rgb(47, 128, 0);
-}
-
-.subtitle1 p {
     margin-bottom: 40px;
 }
