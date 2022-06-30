@@ -320,7 +320,6 @@ header > div:last-child > button:last-child {
     .birthdays > div > div > p {
         font-size: 14px;
     }
-
 }
 
 @media(max-width: 960px) {
@@ -376,7 +375,6 @@ header > div:last-child > button:last-child {
     .birthdays > div > img {
         display: none;
     }
-
 }
 
 @media(max-width: 768px) {
@@ -521,5 +519,4 @@ header > div:last-child > button:last-child {
     .birthdays > div > div > h3 {
         font-size: 14px;
     }
-
 }
