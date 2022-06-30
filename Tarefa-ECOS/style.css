@@ -9,6 +9,12 @@
   text-decoration: none;
 }
 
+hr {
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid rgb(207, 207, 207);
+}
+
 /*header*/
 body {
     font-family: "Roboto", sans-serif;
@@ -16,7 +22,7 @@ body {
 }
 
 header {
-    background: url(./imagens/headerBackground.png), linear-gradient(178deg, #376B97, #6FAA5D);
+    background: url(./imagens/headerBackground.png), linear-gradient(178deg, #3365b1, #6FAA5D);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +43,7 @@ header > div img {
     margin-right: 15px;
 }
 
-header > div a {
+header > div a, .cards:hover {
     cursor: pointer;
 }
 
@@ -73,12 +79,17 @@ header > div a {
 }
 
 input {
+    background-color:rgba(87, 87, 87, 0.4);
     width: 100%;
     padding: 10px;
     text-align: left;
-    background: transparent;
     border: none;
     color: white;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: 1px solid green;
 }
 
 input::placeholder {
@@ -154,10 +165,6 @@ header > div:last-child > button:last-child {
     margin-bottom: 20px;
 }
 
-.cards:hover {
-    cursor: pointer;
-}
-
 .cards .content h3, .cards .content p {
     margin: 10px;
 }
@@ -209,13 +216,13 @@ header > div:last-child > button:last-child {
 }
 
 .buttons-icons > button > i {
-    color: #6FAA5D;
+    color: #199264;
     font-size: 32px;
     margin-bottom: 5px;
 }
 
 .buttons-icons > button > span {
-    color: #6FAA5D;
+    color: #199264;
     font-size: 12px;
     font-weight: bold;
 }
@@ -269,4 +276,250 @@ header > div:last-child > button:last-child {
     color: gray;
     font-size: 12px;
     font-weight: bold;
+}
+
+/*responsive*/
+@media(max-width: 1240px) {
+   
+    .container {
+        max-width: 940px;
+    }
+
+    .container > div:first-child {
+        width: 600px;
+        height: auto;
+    }
+
+    .container > div:last-child {
+        width: 325px;
+        height: 460px;
+    }
+
+    .container img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .cards {
+        width: 580px;
+    }
+
+    .footer-card {
+        margin: 20px 10px 0 10px;
+    }
+
+    .buttons-icons {
+        grid-template-columns: auto auto;
+    }
+
+    .birthdays > div > div > h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .birthdays > div > div > p {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 960px) {
+
+    .container {
+      max-width: 750px;
+    }
+
+    .input-icon {
+        width: 300px;
+    }
+
+    .input-icon a {
+        margin-left: 275px;
+    }
+
+    .container > div:first-child {
+        width: 500px;
+        height: auto;
+    }
+
+    .container > div:last-child {
+        width: 230px;
+        height: 455px;
+    }
+
+    .container img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .cards {
+        width: 480px;
+    }
+
+    .cards h3, .birthdays > div > div > h3 {
+        font-size: 15px;
+    }
+
+    .cards p {
+        font-size: 13px;
+    }
+
+    .footer-card {
+        margin: 10px 10px 0 10px;
+    }
+
+    .buttons-icons > button {
+        width: 100px;
+        height: 85px;
+    }
+
+    .birthdays > div > img {
+        display: none;
+    }
+
+}
+
+@media(max-width: 768px) {
+
+    header {
+        padding: 5px;
+    }
+
+    header > div img {
+        width: 85px;
+        height: 100%;
+        margin-right: 5px;
+    }
+
+    .input-icon {
+        width: 200px;
+    }
+
+    .input-icon a {
+        margin-left: 175px;
+    }
+  
+    .container {
+      max-width: 560px;
+      margin-top: 65px;
+    }
+
+    .container > div:first-child {
+        width: 370px;
+        height: auto;
+    }
+
+    .container > div:last-child {
+        width: 185px;
+        height: 620px;
+    }
+
+    .container img {
+        display: none;
+    }
+
+    .cards {
+        width: 350px;
+        margin-bottom: 10px;
+    }
+
+    .buttons-icons {
+        grid-template-columns: auto;
+    }
+    
+    .buttons-icons > button {
+        width: 150px;
+        height: 65px;
+    }
+
+    .birthdays p {
+        text-align: center;
+    }
+
+    .birthdays > div {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .birthdays > div > div > p {
+        display: none;
+    }
+}
+
+@media(max-width: 576px) {
+
+    header > div img {
+        display: none;
+    }
+    
+    .inicio {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .input-icon {
+        width: 150px;
+    }
+
+    .input-icon a {
+        margin-left: 125px;
+    }
+
+    header > div:last-child > button {
+        font-size: 16px;
+    }
+    
+    header > div:last-child > button:last-child {
+        margin-left: 10px;
+        font-size: 24px;
+    }  
+
+    .container {
+        max-width: 350px;
+    }
+
+    .container > div > p {
+        width: 100px;
+    }
+
+    .container > div:first-child {
+        width: 230px;
+        height: auto;
+    }
+
+    .container > div:last-child {
+        width: 110px;
+        height: 550px;
+    }
+
+    .cards {
+        width: 220px;
+    }
+
+    .footer-card small, .footer-card i{
+        font-size: 12px;
+    }
+
+    .buttons-icons > button {
+        width: 100px;
+        height: 50px;
+    }
+
+    .buttons-icons > button:nth-child(2), .buttons-icons > button:nth-child(6) {
+        width: 100px;
+        height: 60px;
+    }
+
+    .buttons-icons > button > i {
+        font-size: 24px;
+    }
+
+    .birthdays > div {
+        padding: 5px;
+    }
+
+    .birthdays > div > div > h3 {
+        font-size: 14px;
+    }
+
 }
